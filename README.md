@@ -1,5 +1,5 @@
 
-# Mangakaklot Downloader  
+# MangaScrape 
   
 ## Install  
 1. Install `Node.js` >= 10.12.0 
