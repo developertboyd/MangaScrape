@@ -9,7 +9,7 @@
 ## Running
 To run the script has a few arguments that `MUST` be passed.
 ```powershell 
-$ node index.js {manga_name} {chapter_start_from} {max_chapters}
+node index.js {manga_name} {chapter_start_from} {max_chapters}
 ```
 * Name of manga in the url
 	* `https://mangakakalot.com/chapter/konjiki_no_gash/chapter_1`
@@ -23,11 +23,11 @@ $ node index.js {manga_name} {chapter_start_from} {max_chapters}
 > This will create folders in the project with the folder names being the chapter numbers
 
 ### Example
-`$ node index.js konjiki_no_gash 1 323` -> Will download chapters 1-5
+`node index.js konjiki_no_gash 1 323` -> Will download chapters 1-5
 
-`$ node index.js konjiki_no_gash 6 323` -> Will download chapters 6-10
+`node index.js konjiki_no_gash 6 323` -> Will download chapters 6-10
 
-`$ node index.js konjiki_no_gash 320 323` -> Will download chapters 320-323
+`node index.js konjiki_no_gash 320 323` -> Will download chapters 320-323
 
 ## Special Chapters
 ### Coming Soon
