@@ -1,0 +1,15 @@
+{
+  "name": "mangakaklot_chapter_downloader",
+  "version": "1.0.0",
+  "description": "Download script to scrape Mangakaklot's manga.",
+  "main": "index.js",
+  "author": "Taylor Boyd",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cli-progress": "^2.1.1",
+    "colors": "^1.3.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
