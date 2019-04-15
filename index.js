@@ -100,8 +100,6 @@ function downloadPages(html) {
                 );
             }, Promise.resolve([])).then(arrayOfResults => {
                 resolve();
-                // arrayOfResults.forEach(function (result) {
-                // });
             });
         }).catch(function (error) {
             reject(error);
