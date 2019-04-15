@@ -8,7 +8,7 @@
 
 ## Running
 To run the script has a few arguments that `MUST` be passed.
-```console 
+```powershell 
 node index.js {manga_name} {chapter_start_from} {max_chapters}
 ```
 * Name of manga in the url
