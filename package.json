@@ -1,7 +1,7 @@
 {
-  "name": "mangakaklot_chapter_downloader",
-  "version": "1.0.0",
-  "description": "Download script to scrape Mangakaklot's manga.",
+  "name": "mangascrape",
+  "version": "1.0.1",
+  "description": "Download script to scrape manga from a specific source.",
   "main": "index.js",
   "author": "Taylor Boyd",
   "license": "ISC",
