@@ -50,8 +50,8 @@ return chapterRequests.reduce((promiseChain, currentTask) => {
     bar2.start(100, 0);
 
     var chapterChain = [];
-    arrayOfResults.forEach(function (html) {
-        chapterChain.push(downloadPages(html));
+    arrayOfResults.forEach(function (html, ind) {
+        chapterChain.push(downloadPages(html, ind));
     });
     return chapterChain.reduce((promiseChain, currentTask) => {
         return promiseChain.then(chainResults =>
@@ -67,9 +67,9 @@ return chapterRequests.reduce((promiseChain, currentTask) => {
     });
 });
 
-function downloadPages(html) {
-    chapterCountDown--;
-    var currentChapter = Math.abs(chapterCountDown - maxChapter) + 1;
+
+function downloadPages(html, ind) {
+    var currentChapter = ind + chapterStart;
     return new Promise(function (resolve, reject) {
         var $ = cheerio.load(html);
         fs.promises.mkdir(saveLocation + 'ch' + currentChapter, {recursive: true}).then(function () {
